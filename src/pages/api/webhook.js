@@ -8,9 +8,11 @@ const app = !admin.apps.length ? admin.initializeApp({
 }) : admin.app();
 
 // Establish connection to Stripe
-const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`);
+// const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`);
+const stripe = require('stripe')('sk_test_51J3dN6LFNGm1VrmVfFGmhhF2d7imW2YurOoppJH6g3bD79OYLuxlIePiwZrTCsj8JSFvRE8Cv2DpnDSZVh8bpnwg00aiyD6eqX');
 
-const endpointSecret = `${process.env.STRIPE_SIGNING_SECRET}`;
+// const endpointSecret = `${process.env.STRIPE_SIGNING_SECRET}`;
+const endpointSecret = 'whsec_HMekIO7tYOMqLh0nyeCXGJ6DjYdPTm1M';
 
 const fulfillOrder = async (session) => {
    // console.log('Fulfilling order', session)
@@ -33,7 +35,7 @@ const fulfillOrder = async (session) => {
 export default async (req, res) => {
    if (req.method === 'POST') {
       const requestBuffer = await buffer(req);
-      const payload = requestBuffer.toString()
+      const payload = requestBuffer.toString();
       const sig = req.headers["stripe-signature"];
 
       let event;
