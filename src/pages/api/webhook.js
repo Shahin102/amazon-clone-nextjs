@@ -8,11 +8,9 @@ const app = !admin.apps.length ? admin.initializeApp({
 }) : admin.app();
 
 // Establish connection to Stripe
-// const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`);
-const stripe = require('stripe')('sk_test_51J3dN6LFNGm1VrmVfFGmhhF2d7imW2YurOoppJH6g3bD79OYLuxlIePiwZrTCsj8JSFvRE8Cv2DpnDSZVh8bpnwg00aiyD6eqX');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-// const endpointSecret = `${process.env.STRIPE_SIGNING_SECRET}`;
-const endpointSecret = 'whsec_HMekIO7tYOMqLh0nyeCXGJ6DjYdPTm1M';
+const endpointSecret = process.env.STRIPE_SIGNING_SECRET;
 
 const fulfillOrder = async (session) => {
    // console.log('Fulfilling order', session)
