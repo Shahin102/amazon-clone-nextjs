@@ -38,3 +38,6 @@ Run commands
 2) ```yarn install```
 
 3) ```yarn run dev```
+
+
+### note: we have to create firebase-app, firebase config connection & firestore database to get the app's database working with localhost...
