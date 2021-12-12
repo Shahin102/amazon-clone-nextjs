@@ -4,6 +4,7 @@ https://amazon-clone-nextjs-taupe.vercel.app/
 By going above link we can get 2 types of errors (inside of Chrome)
 (1) Deceptive site ahead
 (2) Session timeout
+
 these errors are happening because of browser
 
 To fix the above error for checking the full app --> 
