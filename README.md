@@ -1,4 +1,4 @@
-### Deployed public link --> https://amazon-clone-nextjs-taupe.vercel.app/
+## Deployed public link --> https://amazon-clone-nextjs-taupe.vercel.app/
 
 ### By going above link we can get 2 types of errors (inside of Chrome):
 
