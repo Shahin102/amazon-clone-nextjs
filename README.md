@@ -1,6 +1,6 @@
 ### Deployed public link --> https://amazon-clone-nextjs-taupe.vercel.app/
 
-### By going above link we can get 2 types of errors (inside of Chrome)
+### By going above link we can get 2 types of errors (inside of Chrome):
 
 (1) Deceptive site ahead
 
@@ -8,7 +8,7 @@
 
 these errors are happening because of browser
 
-#### To fix the above error for checking the full app --> 
+### To fix the above error for checking the full app --> 
 go to chrome://settings/security
 then, turn the settings from Standard protection to No protection (not recommended)
 
