@@ -1,3 +1,8 @@
+#### This project is inspired by --> ####
+##### YouTube: https://www.youtube.com/watch?v=VA-UN_6oNG8&list=PLf16UKl7nR5AF9k4ckTG82onvpAv1NAE7&index=4&ab_channel=SonnySangha #####
+##### GitHub: https://github.com/sonnysangha/Amazon-starter-template-nextjs #####
+
+
 ## Deployed public link --> https://amazon-clone-nextjs-taupe.vercel.app/
 
 ### By going above link we can get 2 types of errors (inside of Chrome):
